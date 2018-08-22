@@ -1,0 +1,141 @@
+<HTML><HEAD>
+<BASEFONT FACE="lucida sans" SIZE="3" COLOR="#000000">
+<title>Pacio storage ideas</title>
+<script language="javascript">
+ function selectnode(idx) {
+   window.parent.frames['frtree'].iselectnode(idx);
+ }
+</script>
+<style>
+body {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;background-color:#F5EEEE
+}
+.fieldcaption, .fieldvalue {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000}
+ .clsarticlepage {text-align:left;width:600px;margin-left:50;margin-right:50;margin-top:50;margin-bottom:50;font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;
+padding-left:50;padding-right:50;padding-top:50;padding-bottom:50;border-width:1;border-style:solid;background-color:#FFFFFF;border-color:#D0D0D0
+}
+</style>
+</HEAD>
+<body onLoad="selectnode(53);">
+<div class="clsarticlepage">
+<div><FONT FACE="lucida sans" SIZE=3>The '</FONT><a href="file://C:/Users/david/.Me/Pacio/Technology/Pacio Storage.txt" target="_blank"><FONT FACE="lucida sans" SIZE=3>Pacio Storage.txt</FONT></A><FONT FACE="lucida sans" SIZE=3>' ideas</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>These 2017 notes assume that the Pacio blockchain allows customisation </FONT><FONT FACE="lucida sans" SIZE=3>of the blockchain (BC or bc) transaction&frasl;message.</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Note: Probably NOT how it will be done in 2018++, but kept just for </FONT><FONT FACE="lucida sans" SIZE=3>reference&frasl;ideas.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Bc transaction to have a Pacio field added at the end. Format of that i.e. </FONT><FONT FACE="lucida sans" SIZE=3>delimited, specified length etc to be decided when the transaction detail </FONT><FONT FACE="lucida sans" SIZE=3>is available.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>These notes assume English only, but support for other languages will </FONT><FONT FACE="lucida sans" SIZE=3>need to be added.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>BC Transaction (Message) Pacio Field</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>====================================</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- transaction type Id #</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- app Id</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- entity Id</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields as defined for transaction type, in binary form</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Database About Pacio Transactions for use by Producers Building Blocks </FONT><FONT FACE="lucida sans" SIZE=3>and Apps via the API to be able to pass appropriate Json objects</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>=========================================================</FONT><FONT FACE="lucida sans" SIZE=3>=========================================================</FONT><FONT FACE="lucida sans" SIZE=3>=====================</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>After live running starts the records described here which include a </FONT><FONT FACE="lucida sans" SIZE=3>version # cannot be edited.</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Change must be made via a new entry with a link back to the previous </FONT><FONT FACE="lucida sans" SIZE=3>version.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Questions?</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- dispense with enums and use ids for everything for consistency?</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Constants</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>~~~~~~~~~</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Enums for:</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- app type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; app, mapp, dapp, chatbot, ...</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- continents:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Africa, America North, America South, Asia, Australia, </FONT><FONT FACE="lucida sans" SIZE=3>Asia, Europe</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- country groupings: monetary union, customs union, political union, </FONT><FONT FACE="lucida sans" SIZE=3>trade association, military alliance, multi-functional union</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Tables</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>~~~~~~</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Transaction Types In memory DB&frasl;table</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>-----------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha 32 chars</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- subClass&nbsp;&nbsp; alpha 32 chars</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- sortKey&nbsp;&nbsp;&nbsp; alpha 32 chars</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ver #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int with 2 places of implied decimals re fields changes</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- prevId&nbsp;&nbsp;&nbsp;&nbsp; id of previous version after an edit</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields&nbsp;&nbsp;&nbsp;&nbsp; list of fields where each field descriptor holds info about the </FONT><FONT FACE="lucida sans" SIZE=3>field, its type, and its purpose, in json form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- creation&nbsp;&nbsp; datetime</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; datetime</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Notes: Every single write action in Pacio, including via the API, will </FONT><FONT FACE="lucida sans" SIZE=3>involve a transaction, so there will be a lot of transactions,</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as well as a lot of transaction types to describe them.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Apps</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>----</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- app type&nbsp;&nbsp; enum</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha 32</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short Name alpha 16</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ver #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int with 2 places of implied decimals</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- prevId&nbsp;&nbsp;&nbsp;&nbsp; id of previous version after an edit</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>World Regions</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>-------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha:&nbsp;&nbsp;&nbsp;&nbsp; South East Asia</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short Name if any&nbsp; alpha:&nbsp;&nbsp;&nbsp;&nbsp; SEA</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- continent(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum list: Asia Enum</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Country Groupings</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>-----------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum:&nbsp; multi-functional union</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha: European Union</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short name if any&nbsp; alpha: EU</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Countries</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>---------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ISO name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- propertyName&nbsp;&nbsp;&nbsp;&nbsp; no spaces form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if different from name</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ISO-31661-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- part of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; country id&nbsp; e.g. England part of UK</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- associated with&nbsp; country id&nbsp; e.g. Gibraltar associated with UK</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- continent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- region(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- grouping(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- comments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Entity Types</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ver #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int with 2 places of implied decimals re fields changes</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- prevId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id of previous version after an edit</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- parentEntityId&nbsp;&nbsp; 0 if none, otherwise properties merged</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- countries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list, empty if not country specific e.g. 'Individual' or </FONT><FONT FACE="lucida sans" SIZE=3>DAO</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- groupings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list, empty if none</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list of fields where each field descriptor holds about the </FONT><FONT FACE="lucida sans" SIZE=3>field, its type, and its purpose, in json form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- comments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Entities</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>--------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- entity type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- accountAddr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEA BC address</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields as defined for the entity type, in binary form</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>And so on for:</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Currencies (Crypto and Fiat)</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Languages</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Stock Exchanges</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Crypto Exchanges</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><FONT FACE="lucida sans" SIZE=3></FONT>
+</div>
+<div style="text-align:left;width:600px;margin-left:50;margin-right:50;margin-bottom:10"><table width="100%" cellspacing="0" cellpadding="0"><tr><td align=left valign=middle><table style="border-style:solid;border-width:1;border-color:#D0D0D0;background-color:#FFFFFF" cellspacing=0 cellpadding=10><tr><td nowrap style="font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000"> [&nbsp;<a href="3DAF476237390D492CA69007D9AA02762418032B.html" style="color:#330099">Previous</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="35E4618B8D0AB2D7D8404DDBA895B31C24CE9922.html" style="color:#330099">Next</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="4631BF72FE1FFE9EC5BA06567E1C20E1CDBDB7A4.html" style="color:#330099">Up</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="92537B9C48CB0B03A2CEFD4A109090DF632C5F39.html" style="color:#330099">First</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="5B901D34DC60314FAED589DB56D7905F7CD9FE03.html" style="color:#330099">Last</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Article 54 of 78)</td></tr></table></td><td width=100 valign=middle align=right><p align=right><a href="http://www.treepad.com" target="_blank"><img src="../navimages/tpbanner1.gif" border="0" alt="This page is created with TreePad"></a></p></td></tr></table></div>
+<div style="text-align:left;width:600px;margin-left:50;margin-right:50;margin-bottom:10;text-align:center">This version of TreePad is not registered</div>
+</body></html>
