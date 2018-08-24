@@ -1,15 +1,49 @@
 <html>
 <head><meta name="generator" content="TreePad, http://www.treepad.com">
-<title>Pacio</title>
+<title>Pacio - This version of TreePad is not registered </title>
+<SCRIPT LANGUAGE="JavaScript">
+
+var filename_article = '';
+
+function extract_param() {  
+  var args = window.location.search;
+
+  if (args.charAt (0) == '?') {
+    args = args.substring (1, args.length);
+    var lst_args = args.split ('&');
+    var idx = 0;
+
+    for (idx = 0; idx < lst_args.length; ++ idx) {
+      var arg = lst_args[idx].split ('=');
+      if (arg.length >= 2) {
+        var arg_name = unescape (arg [0]);
+        var arg_value = unescape (arg [1]);
+        if (arg_name.toLowerCase() == 'article')
+          filename_article = arg_value;
+      }
+    }
+  }
+}
+
+extract_param();
+
+function onframeload(frm) {
+  if (filename_article != '') {
+    frm.src = 'documents/' + filename_article;
+    filename_article = '';
+  }
+}
+
+</SCRIPT>
 </head>
 <frameset  frameborder="0" border="0" cols="*" rows="55 ,*">
   <frame marginwidth="0"  marginheight="0" src="heading.html" name="frhead"  scrolling="no">
 <frameset  frameborder="0" border="0" cols="320,*">
-  <frame  src="tree2.html" name="frtree">
-  <frame src="documents/92537B9C48CB0B03A2CEFD4A109090DF632C5F39.html" name="frarticle">
+  <frame  src="tree.html" name="frtree">
+  <frame onLoad="onframeload(this)" src="documents/92537B9C48CB0B03A2CEFD4A109090DF632C5F39.html" name="frarticle">
 </frameset>
   <noframes>
-    <p>Your browser does not support frames, please click <a href="tree2.html">here</a> to view the table of contents.</p>
+    <p>Your browser does not support frames, please click <a href="tree.html">here</a> to view the table of contents.</p>
   </noframes>
 </frameset>
 </html>

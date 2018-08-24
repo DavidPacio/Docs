@@ -1,0 +1,251 @@
+<HTML><HEAD>
+<BASEFONT FACE="lucida sans" SIZE="3" COLOR="#000000">
+<title>Elemental Data Item</title>
+<script language="javascript">
+ function selectnode(idx) {
+   window.parent.frames['frtree'].iselectnode(idx);
+ }
+</script>
+<style>
+body {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;background-color:#F5EEEE
+}
+.fieldcaption, .fieldvalue {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000}
+ .clsarticlepage {text-align:left;width:90%;margin-left:50;margin-right:50;margin-top:10;margin-bottom:50;font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;
+padding-left:40;padding-right:40;padding-top:25;padding-bottom:40;border-width:1;border-style:solid;background-color:#FFFFFF;border-color:#D0D0D0
+}
+</style>
+</HEAD>
+<body onLoad="selectnode(22);">
+<div class="clsarticlepage">
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Thoughts on what is to be stored or deducible from parent per </FONT><FONT FACE="lucida sans" SIZE=3>elemental data item, where an elemental data item (edi or element) is </FONT><FONT FACE="lucida sans" SIZE=3>any discrete piece of data broken down to its lowest level, or smallest </FONT><FONT FACE="lucida sans" SIZE=3>piece for which separate sematic info is required.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>All data item are stored within SDOs - Smart Data Objects</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>SDOs will:</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- do a lot...</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- have an interface to interact with apps via the API</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- provide much default info for items within the SDO</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- support inheritance</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>SDOs are structured into SdoSets by Taxonomy</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>SDOs are defined internally by Taxonomy, and SDO code</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Ultimately each item of data will have available from </FONT><a href="file://C:/Users/david/.Me/Pacio/Technology/Pacio/SSIM/Pacio Design Calcs.xlsx" target="_blank"><FONT FACE="lucida sans" SIZE=3>Pacio Design </FONT><FONT FACE="lucida sans" SIZE=3>Calcs.xlsx</FONT></A></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div align="center">
+<table BORDER="1" width = "100%"><tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Name</FONT></td>
+<td VALIGN=top WIDTH=34%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Description</FONT></td>
+<td VALIGN=top WIDTH=8%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Subsy</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">stem</FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Ty</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">pe</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Byt</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">es</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Lucida Console" SIZE=3 COLOR="#000000">Ra</FONT><FONT FACE="Lucida Console" SIZE=3 COLOR="#000000">ng</FONT><FONT FACE="Lucida Console" SIZE=3 COLOR="#000000">e</FONT></td>
+<td VALIGN=top WIDTH=31%>&nbsp;<FONT FACE="Lucida Console" SIZE=3 COLOR="#000000"></FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Item Id - </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">most basic </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Id</FONT></td>
+<td VALIGN=top WIDTH=34%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Each element will have a unique </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Id.</FONT></td>
+<td VALIGN=top WIDTH=8%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t64</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1 </FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">18,446,744,073,709,600,0</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">00 </FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=34%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=8%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=1%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">*</FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t12</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">8</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp; 16 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1 </FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">3.40282E+38</FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Sdo Id</FONT></td>
+<td VALIGN=top WIDTH=34%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Id within an Sdo. Use of a 32 bit </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uint will impose a limit of 4.2 </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">trillion items per Sdo. If ever </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">that becomes a problem </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">multiple Sdos could be used.</FONT></td>
+<td VALIGN=top WIDTH=8%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t32</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1</FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">4,294,967,295 </FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Owner Ids </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">list</FONT></td>
+<td VALIGN=top WIDTH=34%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">A list of digital Ids for </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">entities?people (could be self) </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">with %s adding to 100 if more </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">than one. The Digital Id </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Subsystem will provide country, </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">lanaguage etc info</FONT></td>
+<td VALIGN=top WIDTH=8%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Digital </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Id </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Subsys</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">tem</FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t32</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1</FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">4,294,967,295 </FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">App Id</FONT></td>
+<td VALIGN=top WIDTH=34%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Id of the app which created the </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">element</FONT></td>
+<td VALIGN=top WIDTH=8%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Apps </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Direct</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">ory</FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t32</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1</FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">4,294,967,295 </FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Data Type </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Id</FONT></td>
+<td VALIGN=top WIDTH=34%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=8%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Data </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Types </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">and </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Units </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Taxon</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">omy</FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t32</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1</FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">4,294,967,295 </FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Units Id</FONT></td>
+<td VALIGN=top WIDTH=34%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=8%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Data </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Types </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">and </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Units </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Taxon</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">omy</FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">uin</FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">t32</FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 </FONT></td>
+<td VALIGN=top WIDTH=5%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">1</FONT></td>
+<td VALIGN=top WIDTH=31%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="Calibri" SIZE=3 COLOR="#000000">4,294,967,295 </FONT></td>
+</tr>
+<tr><td VALIGN=top WIDTH=12%><FONT FACE="Calibri" SIZE=3 COLOR="#000000">Datetime</FONT></td>
+<td VALIGN=top WIDTH=34%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=8%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=1%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=4%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=5%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=5%>&nbsp;<FONT FACE="Lucida Console" SIZE=3 COLOR="#000000"></FONT></td>
+<td VALIGN=top WIDTH=31%>&nbsp;<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT></td>
+</tr>
+</table></div>
+<div>&nbsp;</div>
+<FONT FACE="Calibri" SIZE=3 COLOR="#000000"></FONT><div><FONT FACE="lucida sans" SIZE=3>..........&nbsp; lots to come ...</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Fields as defined for data type, in binary form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>SDO</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Digital Id System</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Data Types Taxonomy</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Apps Directory</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Owner Info</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- parents i.e. organisations&frasl;enities incl now dead&frasl;dormant ones</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- associations i.e. orgs&frasl;enities incl now dead&frasl;dormant ones</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- family&frasl;friends</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- location</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><b><FONT FACE="lucida sans" SIZE=3>Digital Id</FONT></b></div>
+<div><FONT FACE="lucida sans" SIZE=3>uint32 Id</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Database About Pacio Transactions for use by Producers Building Blocks </FONT><FONT FACE="lucida sans" SIZE=3>and Apps via the API to be able to pass appropriate Json objects</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>=========================================================</FONT><FONT FACE="lucida sans" SIZE=3>=========================================================</FONT><FONT FACE="lucida sans" SIZE=3>=====================</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>After live running starts the records described here which include a </FONT><FONT FACE="lucida sans" SIZE=3>version # cannot be edited.</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Change must be made via a new entry with a link back to the previous </FONT><FONT FACE="lucida sans" SIZE=3>version.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Questions?</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- dispense with enums and use ids for everything for consistency?</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Constants</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>~~~~~~~~~</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Enums for:</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- app type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; app, mapp, dapp, chatbot, ...</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- continents:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Africa, America North, America South, Asia, Australia, </FONT><FONT FACE="lucida sans" SIZE=3>Asia, Europe</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- country groupings: monetary union, customs union, political union, </FONT><FONT FACE="lucida sans" SIZE=3>trade association, military alliance, multi-functional union</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Tables</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>~~~~~~</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Transaction Types In memory DB&frasl;table</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>-----------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha 32 chars</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- subClass&nbsp;&nbsp; alpha 32 chars</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- sortKey&nbsp;&nbsp;&nbsp; alpha 32 chars</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ver #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int with 2 places of implied decimals re fields changes</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- prevId&nbsp;&nbsp;&nbsp;&nbsp; id of previous version after an edit</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields&nbsp;&nbsp;&nbsp;&nbsp; list of fields where each field descriptor holds info about the </FONT><FONT FACE="lucida sans" SIZE=3>field, its type, and its purpose, in json form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- creation&nbsp;&nbsp; datetime</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; datetime</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Notes: Every single write action in Pacio, including via the API, will </FONT><FONT FACE="lucida sans" SIZE=3>involve a transaction, so there will be a lot of transactions,</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as well as a lot of transaction types to describe them.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Apps</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>----</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- app type&nbsp;&nbsp; enum</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha 32</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short Name alpha 16</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ver #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int with 2 places of implied decimals</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- prevId&nbsp;&nbsp;&nbsp;&nbsp; id of previous version after an edit</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>World Regions</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>-------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha:&nbsp;&nbsp;&nbsp;&nbsp; South East Asia</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short Name if any&nbsp; alpha:&nbsp;&nbsp;&nbsp;&nbsp; SEA</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- continent(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum list: Asia Enum</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Country Groupings</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>-----------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum:&nbsp; multi-functional union</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha: European Union</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short name if any&nbsp; alpha: EU</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Countries</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>---------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ISO name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- propertyName&nbsp;&nbsp;&nbsp;&nbsp; no spaces form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- short name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if different from name</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ISO-31661-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- part of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; country id&nbsp; e.g. England part of UK</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- associated with&nbsp; country id&nbsp; e.g. Gibraltar associated with UK</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- continent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- region(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- grouping(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- comments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Entity Types</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>------------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- ver #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int with 2 places of implied decimals re fields changes</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- prevId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id of previous version after an edit</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- parentEntityId&nbsp;&nbsp; 0 if none, otherwise properties merged</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- countries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list, empty if not country specific e.g. 'Individual' or </FONT><FONT FACE="lucida sans" SIZE=3>DAO</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- groupings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id list, empty if none</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list of fields where each field descriptor holds about the </FONT><FONT FACE="lucida sans" SIZE=3>field, its type, and its purpose, in json form</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- comments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alpha</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Entities</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>--------</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Id -&gt;</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- entity type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- accountAddr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEA BC address</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>- fields as defined for the entity type, in binary form</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>And so on for:</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Currencies (Crypto and Fiat)</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Languages</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Stock Exchanges</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>- Crypto Exchanges</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><FONT FACE="lucida sans" SIZE=3></FONT>
+</div>
+<div style="text-align:left;width:90%;margin-left:50;margin-right:50;margin-bottom:10"><table width="100%" cellspacing="0" cellpadding="0"><tr><td align=left valign=middle><table style="border-style:solid;border-width:1;border-color:#D0D0D0;background-color:#FFFFFF" cellspacing=0 cellpadding=10><tr><td nowrap style="font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000"> [&nbsp;<a href="F124016F6C8B7203030C5110CE95AA09E7FEE39B.html" style="color:#330099">Previous</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="E1C3F56DE447EDD393123A6E962A89C1218FE937.html" style="color:#330099">Next</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="F124016F6C8B7203030C5110CE95AA09E7FEE39B.html" style="color:#330099">Up</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="92537B9C48CB0B03A2CEFD4A109090DF632C5F39.html" style="color:#330099">First</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="73D97DF49045E7808FF150644A45B30904E23E22.html" style="color:#330099">Last</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Article 23 of 86)</td></tr></table></td><td width=100 valign=middle align=right><p align=right><a href="http://www.treepad.com" target="_blank"><img src="../navimages/tpbanner1.gif" border="0" alt="This page is created with TreePad"></a></p></td></tr></table></div>
+<div style="text-align:left;width:90%;margin-left:50;margin-right:50;margin-bottom:10;text-align:center">This version of TreePad is not registered</div>
+</body></html>
