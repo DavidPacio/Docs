@@ -1,0 +1,32 @@
+<HTML><HEAD>
+<BASEFONT FACE="lucida sans" SIZE="3" COLOR="#000000">
+<title>Thoughts</title>
+<script language="javascript">
+ function selectnode(idx) {
+   window.parent.frames['frtree'].iselectnode(idx);
+ }
+</script>
+<style>
+body {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;background-color:#F5EEEE
+}
+.fieldcaption, .fieldvalue {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000}
+ .clsarticlepage {text-align:left;width:90%;margin-left:50;margin-right:50;margin-top:10;margin-bottom:50;font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;
+padding-left:40;padding-right:40;padding-top:25;padding-bottom:40;border-width:1;border-style:solid;background-color:#FFFFFF;border-color:#D0D0D0
+}
+</style>
+</HEAD>
+<body onLoad="selectnode(177);">
+<div class="clsarticlepage">
+<div><FONT FACE="lucida sans" SIZE=3>Thoughts</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>json use -&gt; binary form to be more efficient?</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>From </FONT><a href="https://developer.holochain.org/guide/latest/zome/entry_type_definitions.html" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;developer.holochain.org&frasl;guide&frasl;latest&frasl;zome&frasl;entry_type_definitio</FONT><FONT FACE="lucida sans" SIZE=3>ns.html</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>How is data passed between Holochain, and the WASM Zome code? </FONT><FONT FACE="lucida sans" SIZE=3>Answer: </FONT><i><FONT FACE="lucida sans" SIZE=3>it is stored in the WASM memory as stringified JSON data, and </FONT></i><i><FONT FACE="lucida sans" SIZE=3>accessed by the WASM code and by Holochain, running the WASM </FONT></i><i><FONT FACE="lucida sans" SIZE=3>interpreter.</FONT></i></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>JSON was chosen as the interchange format because it is so universal, </FONT><FONT FACE="lucida sans" SIZE=3>and almost all languages have serializers and parsers. Rust's is called </FONT><FONT FACE="lucida sans" SIZE=3>serde. The three serde related dependencies all relate to the need to </FONT><FONT FACE="lucida sans" SIZE=3>serialize to and from JSON within Zomes.</FONT></div>
+
+</div>
+<div style="text-align:left;width:90%;margin-left:50;margin-right:50;margin-bottom:10"><table width="100%" cellspacing="0" cellpadding="0"><tr><td align=left valign=middle><table style="border-style:solid;border-width:1;border-color:#D0D0D0;background-color:#FFFFFF" cellspacing=0 cellpadding=10><tr><td nowrap style="font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000"> [&nbsp;<a href="5707C799275D98ADDC7829DBBACB62B95998C190.html" style="color:#330099">Previous</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="569C7FB382FC7D8EC84DF578FA46BDE226A9591C.html" style="color:#330099">Next</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="4FFD619BE41B462253B92B14B3BC565A68CF1E91.html" style="color:#330099">Up</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="92537B9C48CB0B03A2CEFD4A109090DF632C5F39.html" style="color:#330099">First</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="6187F04ED0473BEDCDF7AC18510FEC907C2B9B68.html" style="color:#330099">Last</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Article 178 of 181)</td></tr></table></td><td width=100 valign=middle align=right><p align=right><a href="http://www.treepad.com" target="_blank"><img src="../navimages/tpbanner1.gif" border="0" alt="This page is created with TreePad"></a></p></td></tr></table></div>
+</body></html>
