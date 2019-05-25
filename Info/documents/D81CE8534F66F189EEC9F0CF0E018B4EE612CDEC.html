@@ -1,0 +1,86 @@
+<HTML><HEAD>
+<BASEFONT FACE="lucida sans" SIZE="3" COLOR="#000000">
+<title>Accounts</title>
+<script language="javascript">
+ function selectnode(idx) {
+   window.parent.frames['frtree'].iselectnode(idx);
+ }
+</script>
+<style>
+body {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;background-color:#F5EEEE
+}
+.fieldcaption, .fieldvalue {font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000}
+ .clsarticlepage {text-align:left;width:90%;margin-left:50;margin-right:50;margin-top:10;margin-bottom:50;font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000;
+padding-left:40;padding-right:40;padding-top:25;padding-bottom:40;border-width:1;border-style:solid;background-color:#FFFFFF;border-color:#D0D0D0
+}
+</style>
+</HEAD>
+<body onLoad="selectnode(206);">
+<div class="clsarticlepage">
+<div><b><FONT FACE="lucida sans" SIZE=3>Related to Holochain Accounts</FONT></b></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>2019.02.14 Wallets vs. Exchange Accounts vs. Holo(Fuel) Accounts | </FONT><FONT FACE="lucida sans" SIZE=3>Leadership &amp; Org Update 03<br>
+</FONT><a href="https://medium.com/h-o-l-o/wallets-vs-exchange-accounts-vs-holo-fuel-accounts-60c10ff1b946" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;medium.com&frasl;h-o-l-o&frasl;wallets-vs-exchange-accounts-vs-holo-fuel-a</FONT><FONT FACE="lucida sans" SIZE=3>ccounts-60c10ff1b946</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Now, let’s summarise what we mean by the secure context for Holochain </FONT><FONT FACE="lucida sans" SIZE=3>apps and your HoloFuel Account.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><ol TYPE=1><li><b><FONT FACE="lucida sans" SIZE=3>Mutuality &amp; Consent</FONT></b><FONT FACE="lucida sans" SIZE=3>: Cryptocurrencies typically operate based on a </FONT><FONT FACE="lucida sans" SIZE=3>single signature from the spender. There is no evidence for the </FONT><FONT FACE="lucida sans" SIZE=3>receiver to know that they are even party to a transaction, much less a </FONT><FONT FACE="lucida sans" SIZE=3>crime if funds are being stolen. With HoloFuel, transactions are </FONT><FONT FACE="lucida sans" SIZE=3>between agents who are mutually aware and consenting, and this </FONT><FONT FACE="lucida sans" SIZE=3>consent is demonstrated by the countersignatures of each agent on </FONT><FONT FACE="lucida sans" SIZE=3>the transaction saved to both chains.</FONT></li>
+<div><FONT FACE="lucida sans" SIZE=3></FONT></div>
+<li><b><FONT FACE="lucida sans" SIZE=3>Imutability and Verifiability</FONT></b><FONT FACE="lucida sans" SIZE=3>: Transactions are immutable and </FONT><FONT FACE="lucida sans" SIZE=3>verifiable because of how they interact with the distributed hash table </FONT><FONT FACE="lucida sans" SIZE=3>(DHT). Agents first inspect the state (signature history) of the other </FONT><FONT FACE="lucida sans" SIZE=3>party and cryptographically sign their agreement. The headers are </FONT><FONT FACE="lucida sans" SIZE=3>then saved to the DHT.</FONT></li>
+<div><FONT FACE="lucida sans" SIZE=3></FONT></div>
+<li><b><FONT FACE="lucida sans" SIZE=3>Key Management</FONT></b><FONT FACE="lucida sans" SIZE=3>: If your device with your keys and chain is lost or </FONT><FONT FACE="lucida sans" SIZE=3>stolen, as long as you wrote down your master seed as advised, you </FONT><FONT FACE="lucida sans" SIZE=3>can revoke those keys and instantiate new ones to prevent anyone </FONT><FONT FACE="lucida sans" SIZE=3>else from using them, keeping control of your account.</FONT></li>
+<div><FONT FACE="lucida sans" SIZE=3></FONT></div>
+<li><FONT FACE="lucida sans" SIZE=3>Possession of both the account (source chain) and the private keys is </FONT><FONT FACE="lucida sans" SIZE=3>required to produce valid transactions of HoloFuel.</FONT></li>
+</ol>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>2019.02.21 Part 1: Holochain, Holo Accounts, and Cryptographic Key </FONT><FONT FACE="lucida sans" SIZE=3>Management</FONT></div>
+<div><a href="https://medium.com/holochain/part-1-holochain-holo-accounts-and-cryptographic-key-management-8b6306555e09" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;medium.com&frasl;holochain&frasl;part-1-holochain-holo-accounts-and-cryp</FONT><FONT FACE="lucida sans" SIZE=3>tographic-key-management-8b6306555e09</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>What is an Account? So to be clear, we think of an account in terms of an </FONT><FONT FACE="lucida sans" SIZE=3>individual DeepKey keyset.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><b><FONT FACE="lucida sans" SIZE=3>2.0 “Account” Keys and LibSodium</FONT></b></div>
+<div><FONT FACE="lucida sans" SIZE=3>Holochain (and Holo) care about two main cryptographic operations &mdash; </FONT><FONT FACE="lucida sans" SIZE=3>signatures and encryption. Signatures are used for chain validity; in </FONT><FONT FACE="lucida sans" SIZE=3>other words “did person X really create this entry?” Encryption is used </FONT><FONT FACE="lucida sans" SIZE=3>both at rest, to secure persisted information on the disk, and in transit, </FONT><FONT FACE="lucida sans" SIZE=3>to secure communications between parties.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>A user will be able to backup a single seed value and reproduce all the </FONT><FONT FACE="lucida sans" SIZE=3>keys generated from it, as well as make use of passwords and </FONT><FONT FACE="lucida sans" SIZE=3>passphrases in a manner that is resistant to brute-force attacks.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><b><FONT FACE="lucida sans" SIZE=3>2.1 Holochain Key Derivation</FONT></b></div>
+<div><FONT FACE="lucida sans" SIZE=3><img border="0" SRC="../images/DC6299490D0A687BE30995BF54CC1B66E15F066F.jpg" WIDTH="600" HEIGHT="675"/></FONT><FONT FACE="lucida sans" SIZE=3><br>
+</FONT><FONT FACE="lucida sans" SIZE=3><br>
+</FONT><FONT FACE="lucida sans" SIZE=3>Each device you want to hook together under your keyset gets a different </FONT><FONT FACE="lucida sans" SIZE=3>subset of keys that can be individually revoked, giving security isolation.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>If a device is destroyed, and you are fairly certain the keys on it are not </FONT><FONT FACE="lucida sans" SIZE=3>compromised, you could use your root seed and a backup of your private </FONT><FONT FACE="lucida sans" SIZE=3>chain to rebuild your account on a new device &mdash; though you may want </FONT><FONT FACE="lucida sans" SIZE=3>to go ahead and revoke the keys to be thorough.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>So, what is the derivation process?</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>.....</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>2019.03.01 Part 2: Holochain, Holo Accounts, Cryptographic Key </FONT><FONT FACE="lucida sans" SIZE=3>Management, and DeepKey</FONT></div>
+<div><a href="https://medium.com/holochain/part-2-holochain-holo-accounts-cryptographic-key-management-and-deepkey-bf32ee91af65" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;medium.com&frasl;holochain&frasl;part-2-holochain-holo-accounts-cryptogr</FONT><FONT FACE="lucida sans" SIZE=3>aphic-key-management-and-deepkey-bf32ee91af65</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Developer Guide 4.14 Crypto Functions</FONT></div>
+<div><a href="https://developer.holochain.org/guide/latest/zome/crypto.html" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;developer.holochain.org&frasl;guide&frasl;latest&frasl;zome&frasl;crypto.html</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Holochain DNA instances are designed to function in the context of a </FONT><FONT FACE="lucida sans" SIZE=3>Distributed Public Key Insfrastructure (DPKI) which:</FONT></div>
+<ol TYPE=1><li><FONT FACE="lucida sans" SIZE=3>manages key creation and revocation</FONT></li>
+<li><FONT FACE="lucida sans" SIZE=3>manages an agency context that allows grouping and verifying that </FONT><FONT FACE="lucida sans" SIZE=3>sets of DNA instances are controlled by the same agent.</FONT></li>
+<li><FONT FACE="lucida sans" SIZE=3>creates a context for identity verification</FONT></li>
+</ol>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Holochain assumes that there may be different DPKI implementations </FONT><FONT FACE="lucida sans" SIZE=3>but provides a reference implementation we call DeepKey. We assume </FONT><FONT FACE="lucida sans" SIZE=3>that the DPKI implementation is itself a Holochain application, and we </FONT><FONT FACE="lucida sans" SIZE=3>provide access to a set of generic cryptographic functions. These </FONT><FONT FACE="lucida sans" SIZE=3>functions also allow DNA authors to build ad-hoc cryptogrpahic </FONT><FONT FACE="lucida sans" SIZE=3>protocols.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>Developer Guide </FONT><b><FONT FACE="lucida sans" SIZE=3>12.2 Distributed Public Key Infrastructure (DPKI)</FONT></b></div>
+<div><a href="https://developer.holochain.org/guide/latest/dpki.html" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;developer.holochain.org&frasl;guide&frasl;latest&frasl;dpki.html</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>which lists:</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>TODO: merge the various docs we developed to explain DeepKey here.</FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>As above&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;medium.com&frasl;holochain&frasl;part-2-holochain-holo-accounts-cryptogr</FONT><FONT FACE="lucida sans" SIZE=3>aphic-key-management-and-deepkey-bf32ee91af65</FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>DeepKey hApp specs&nbsp;&nbsp; </FONT><a href="https://hackmd.io/UbfvwQdJRKaAHI9Xa7F3VA?view" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;hackmd.io&frasl;UbfvwQdJRKaAHI9Xa7F3VA?view</FONT></A></div>
+<div><FONT FACE="lucida sans" SIZE=3>Key Derivations&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><a href="https://hackmd.io/8c8rZCyaTTqH_7TIBVtEUQ" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;hackmd.io&frasl;8c8rZCyaTTqH_7TIBVtEUQ</A></FONT></div>
+<div><FONT FACE="lucida sans" SIZE=3>Future Version of the DPKI&frasl;DeepKey&nbsp;&nbsp; </FONT><a href="https://hackmd.io/oobu0sKMSMadLXza4rHY_g" target="_blank"><FONT FACE="lucida sans" SIZE=3>https:&frasl;&frasl;hackmd.io&frasl;oobu0sKMSMadLXza4rHY_g</A></FONT></div>
+<div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div>&nbsp;</div>
+<FONT FACE="lucida sans" SIZE=3></FONT><div><FONT FACE="lucida sans" SIZE=3>End</FONT></div>
+
+</div>
+<div style="text-align:left;width:90%;margin-left:50;margin-right:50;margin-bottom:10"><table width="100%" cellspacing="0" cellpadding="0"><tr><td align=left valign=middle><table style="border-style:solid;border-width:1;border-color:#D0D0D0;background-color:#FFFFFF" cellspacing=0 cellpadding=10><tr><td nowrap style="font-size:12;font-family:Tahoma, Arial, Helvetica, sans-serif;color:#000000"> [&nbsp;<a href="4FFD619BE41B462253B92B14B3BC565A68CF1E91.html" style="color:#330099">Previous</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="67FFFECBBA2080E906F4DA34400F0C3FFE25837E.html" style="color:#330099">Next</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="4FFD619BE41B462253B92B14B3BC565A68CF1E91.html" style="color:#330099">Up</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="92537B9C48CB0B03A2CEFD4A109090DF632C5F39.html" style="color:#330099">First</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="13F5073CFFC76E5D3D6666CF352D833216D12B99.html" style="color:#330099">Last</a>&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Article 207 of 217)</td></tr></table></td><td width=100 valign=middle align=right><p align=right><a href="http://www.treepad.com" target="_blank"><img src="../navimages/tpbanner1.gif" border="0" alt="This page is created with TreePad"></a></p></td></tr></table></div>
+</body></html>
